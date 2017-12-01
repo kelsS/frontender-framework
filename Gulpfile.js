@@ -27,7 +27,7 @@ gulp.task('sass-autoprefixer', function() {
 
     return gulp.src(scssMain)
         .pipe(sourcemaps.init())
-        .pipe(postCSS([autoprefixer()]))
+        .pipe(postcss([autoprefixer()]))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(cssOutput))
         .pipe(browserSync.stream());
@@ -54,9 +54,7 @@ const pug = require('gulp-pug');
 
 gulp.task('pages', function buildHTML() {
  return gulp.src('pages/*.pug')
-    .pipe(pug({
-        opts.verbose
-    }));
+    .pipe(pug())
     .pipe(gulp.dest(productionDest));
 });
 
@@ -64,7 +62,7 @@ gulp.task('pages', function buildHTML() {
  * Image Minification
 */
 
-const imageMin = require('gulp-imagemin');
+const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 
 gulp.task('img', function() {
