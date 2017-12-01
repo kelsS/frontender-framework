@@ -1,0 +1,120 @@
+// color vars
+$tan: #eeeee8;
+$teal: #35a9ad;
+$white: #fff;
+$offwhite: #fefefe;
+$black: #000;
+$indianred: #bf4354;
+$slategray: #113738;
+$chestnut: #a94343;
+$seashell-peach: #fff7f1;
+$eggplant: #43112c;
+$eggplant-rgba: rgba(67, 17, 44, 0.8);
+$wisteria: #bca6f4;
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: $wisteria;
+}
+
+li {
+  list-style: none;
+}
+
+.screenreader-only {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+}
+
+.screenreader-only-focus {
+  &:active,
+  &:focus {
+  position: static;
+  overflow: visible;
+  white-space: normal;
+  clip: auto;
+  clip-path: none;
+  width: auto;
+  height: auto;
+  }
+}
+
+#main-navigation{
+  .main-navigation-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end
+  }
+  padding: 1rem;
+  ul li {
+    display: inline-block;
+  }
+}
+.intro {
+  background: linear-gradient(
+      rgba(67,17,44, 0.8), 
+      rgba(67,17,44, 0.8)),
+    url('https://media.giphy.com/media/3ohjUQNVJFno5tDc5y/giphy.gif');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  .col-lg-6 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  color: $wisteria;
+}
+
+.product {
+  margin-top: 0;
+  padding: 20rem 0;
+  margin-left: 0;
+  margin-right: 0;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/755519/wall-painting-v2.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.product-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: $wisteria;
+  padding: 2rem 0;
+  background: $eggplant-rgba;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  ul li {
+    display: inline-block;
+  }
+  .details-box {
+    background: blue;
+  }
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}

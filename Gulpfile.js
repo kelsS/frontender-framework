@@ -53,7 +53,7 @@ gulp.task('scripts', function() {
 const pug = require('gulp-pug');
 
 gulp.task('pages', function buildHTML() {
- return gulp.src('pages/*.pug')
+ return gulp.src('src/pages/*.pug')
     .pipe(pug())
     .pipe(gulp.dest(productionDest));
 });
