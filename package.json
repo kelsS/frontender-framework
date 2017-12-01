@@ -1,0 +1,38 @@
+{
+  "name": "frontender-framework",
+  "version": "1.0.0",
+  "description": "Framework with gulp, sass, pug, and linters",
+  "main": "index.html",
+  "scripts": {
+    "test": "ok"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "gulp",
+    "git",
+    "sass",
+    "pug",
+    "linters"
+  ],
+  "author": "kelsey swanson",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-html5-lint": "^1.1.0",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-include": "^2.3.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-scss-lint-stylish": "^1.0.1",
+    "gulp-sourcemaps": "^2.6.1",
+    "imagemin-pngquant": "^5.0.1",
+    "npm-check-updates": "^2.13.0"
+  }
+}
